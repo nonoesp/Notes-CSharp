@@ -18,5 +18,5 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 
 ## Reference
 
-* [Using OpenGL In Windows.Forms With OpenTK](http://www.opentk.com/doc/chapter/2/glcontrol)
+* [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
 * [Grasshopper Assembly Extension](https://visualstudiogallery.msdn.microsoft.com/9e389515-0719-47b4-a466-04436b491cd6)

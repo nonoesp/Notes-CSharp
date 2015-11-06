@@ -9,7 +9,7 @@ Notes of C#.
 
 ```c#
 int[] numbers = new int[8];
-numbers.GetLenth(); // Returns 8
+numbers.GetLenth(0); // Returns 8
 ```
 
 ### Print A Formatted String

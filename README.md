@@ -5,6 +5,13 @@ Notes of C#.
 
 ## Syntax
 
+### Get The Length of An Array
+
+```c#
+int[] numbers = new int[8];
+numbers.GetLenth(); // Returns 8
+```
+
 ### Print A Formatted String
 
 ```c#

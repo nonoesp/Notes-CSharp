@@ -53,6 +53,12 @@ Point ScreenPoint = myControl.PointToScreen(ClientPoint);
 
 Using the OpenTK library with C# to draw.
 
+### Change The Scale of The Graphics
+
+```c#
+GL.Scale(0.5f, 0.5f, 0.5f); // GL.Scale(double x, double y, double z);
+```
+
 ### Draw Lines
 
 ```C#

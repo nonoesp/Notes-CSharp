@@ -23,9 +23,9 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 // Should print: The rating of 2001: A Space Odyssey (1968) is 7.7.
 ```
 
-## Windows Forms
+### Get The Mouse Position
 
-### Get Mouse Position Inside A Control
+Depending on the context, we may be willing to get coordinates of the cursor relative to a given window, a control, or relative to the whole screen.
 
 ```C#
 private void button1_MouseMove(object sender, MouseEventArgs e)

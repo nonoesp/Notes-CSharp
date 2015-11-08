@@ -27,6 +27,8 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 
 Depending on the context, we may be willing to get coordinates of the cursor relative to a given window, a control, or relative to the whole screen.
 
+The following method is an event that gets fired whenever you move the mouse on the screen, not necessarily on top of your application's window.
+
 ```C#
 private void button1_MouseMove(object sender, MouseEventArgs e)
 {

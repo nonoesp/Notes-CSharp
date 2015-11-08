@@ -35,6 +35,18 @@ private void button1_MouseMove(object sender, MouseEventArgs e)
 }
 ```
 
+Also, the location of the mouse on the screen can be retrieved. There are methods available to both convert screen points to a control and to convert control points to screen coordinates.
+
+```C#
+// Methods
+Point Control.PointToClient(Point point);
+Point Control.PointToScreen(Point point);
+
+// Usage
+Point ClientPoint = myControl.PointToClient(ScreenPoint);
+Point ScreenPoint = myControl.PointToScreen(ClientPoint);
+```
+
 ## OpenGL
 
 Using the OpenTK library with C# to draw.

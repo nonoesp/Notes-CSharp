@@ -90,7 +90,13 @@ GL.Begin(PrimitiveType.Polygon);
 GL.End();
 ```
 
-## Reference
+## Math
+
+### Math References
+
+* [Constructing The LookAt() Matrix Directly](http://www.cs.virginia.edu/~gfx/Courses/1999/intro.fall99.html/lookat.html)
+
+## References
 
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
 * [Grasshopper Assembly Extension](https://visualstudiogallery.msdn.microsoft.com/9e389515-0719-47b4-a466-04436b491cd6)

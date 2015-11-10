@@ -59,6 +59,11 @@ Point ScreenPoint = myControl.PointToScreen(ClientPoint);
 
 Using the OpenTK library with C# to draw.
 
+### OpenGL References
+
+* [CocoaGL Tutorial](https://github.com/beelsebob/Cocoa-GL-Tutorial)
+* [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
+* 
 ### Change The Scale of The Graphics
 
 ```c#
@@ -99,5 +104,4 @@ GL.End();
 
 ## References
 
-* [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
 * [Grasshopper Assembly Extension](https://visualstudiogallery.msdn.microsoft.com/9e389515-0719-47b4-a466-04436b491cd6)

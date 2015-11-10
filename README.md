@@ -59,11 +59,11 @@ Point ScreenPoint = myControl.PointToScreen(ClientPoint);
 
 Using the OpenTK library with C# to draw.
 
-### OpenGL References
+### References
 
 * [CocoaGL Tutorial](https://github.com/beelsebob/Cocoa-GL-Tutorial)
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
-* 
+
 ### Change The Scale of The Graphics
 
 ```c#
@@ -97,7 +97,7 @@ GL.End();
 
 ## Math
 
-### Math References
+### References
 
 * [Constructing The LookAt() Matrix Directly](http://www.cs.virginia.edu/~gfx/Courses/1999/intro.fall99.html/lookat.html)
 * [Perspective Projection](http://ogldev.org/www/tutorial12/tutorial12.html)

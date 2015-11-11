@@ -61,6 +61,7 @@ Using the OpenTK library with C# to draw.
 
 ### References
 
+* [Introduction to GLKit](https://developer.apple.com/library/ios/documentation/GLkit/Reference/GLKit_Collection/index.html#//apple_ref/doc/uid/TP40010915)
 * [CocoaGL Tutorial](https://github.com/beelsebob/Cocoa-GL-Tutorial)
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
 

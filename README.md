@@ -61,6 +61,7 @@ Using the OpenTK library with C# to draw.
 
 ### References
 
+* [Picking and Using Selection](https://www.opengl.org/archives/resources/faq/technical/selection.htm)
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
 
 ### Change The Scale of The Graphics
@@ -149,7 +150,6 @@ static void drawAnObject ()
 
 ### References
 
-* [Picking and Using Selection](https://www.opengl.org/archives/resources/faq/technical/selection.htm)
 * [Constructing The LookAt() Matrix Directly](http://www.cs.virginia.edu/~gfx/Courses/1999/intro.fall99.html/lookat.html)
 * [Perspective Projection](http://ogldev.org/www/tutorial12/tutorial12.html)
 

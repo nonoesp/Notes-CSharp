@@ -94,7 +94,7 @@ GL.Begin(PrimitiveType.Polygon);
 GL.End();
 ```
 
-## OpenGL (Xcode/Objective-C)
+## OpenGL with Cocoa (Xcode/Objective-C)
 
 Even though these notes are not C#, I will keep them here until this section grows enough to create a single repository of OpenGL notes.
 

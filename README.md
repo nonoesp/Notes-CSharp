@@ -55,15 +55,12 @@ Point ClientPoint = myControl.PointToClient(ScreenPoint);
 Point ScreenPoint = myControl.PointToScreen(ClientPoint);
 ```
 
-## OpenGL
+## OpenGL (Visual Studio/C#)
 
 Using the OpenTK library with C# to draw.
 
 ### References
 
-* [Introduction to GLKit](https://developer.apple.com/library/ios/documentation/GLkit/Reference/GLKit_Collection/index.html#//apple_ref/doc/uid/TP40010915)
-* [Drawing with OpenGL and GLKit](https://developer.apple.com/library/ios/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/DrawingWithOpenGLES/DrawingWithOpenGLES.html)
-* [CocoaGL Tutorial](https://github.com/beelsebob/Cocoa-GL-Tutorial)
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
 
 ### Change The Scale of The Graphics
@@ -95,6 +92,57 @@ GL.Begin(PrimitiveType.Polygon);
   GL.Vertex2(250.0, 250.0);
   GL.Vertex2(250.0, 200.0);
 GL.End();
+```
+
+## OpenGL (Xcode/Objective-C)
+
+Even though these notes are not C#, I will keep them here until this section grows enough to create a single repository of OpenGL notes.
+
+### References
+
+* [Introduction to GLKit](https://developer.apple.com/library/ios/documentation/GLkit/Reference/GLKit_Collection/index.html#//apple_ref/doc/uid/TP40010915)
+* [Drawing with OpenGL and GLKit](https://developer.apple.com/library/ios/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/DrawingWithOpenGLES/DrawingWithOpenGLES.html)
+* [CocoaGL Tutorial](https://github.com/beelsebob/Cocoa-GL-Tutorial)
+* [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
+
+### [OSX] Subclassing NSOpenGLView
+
+Create a new OS X Cocoa Project with a single View Controller. In the NIB file, drag an NSOpenGLView to your View Controller.
+
+Now, go and add a new Cocoa class to your project, which should be subclassing NSOpenGLView. Call it something like MyNSOpenGLView, CustomNSOpenGLView, or even GraphicsView—you will need to change the class of the NSOpenGLView inside your NIB file to the class name you selected for your NSOpenGLView subclass. We will stick with CustomNSOpenGLView for now.
+
+In the CustomNSOpenGLView.m file, of your class, import the following:
+
+```objc
+#import "CustomNSOpenGLView.h"
+#import <OpenGL/gl.h> // import OpenGL
+
+@implementation CustomNSOpenGLView
+```
+
+Everything should be working properly. Now, we just need to add some setup and drawing code in our class’ `drawRect:` method (which we need to add). *This code is from Apple’s [reference](https://developer.apple.com/library/mac/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_drawing/opengl_drawing.html).*
+
+```objc
+-(void) drawRect: (NSRect) bounds
+{
+    glClearColor(0, 0, 0, 0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    drawAnObject();
+    glFlush();
+}
+
+// Draw a triangle
+static void drawAnObject ()
+{
+    glColor3f(1.0f, 0.85f, 0.35f);
+    glBegin(GL_TRIANGLES);
+    {
+        glVertex3f(  0.0,  0.6, 0.0);
+        glVertex3f( -0.2, -0.3, 0.0);
+        glVertex3f(  0.2, -0.3 ,0.0);
+    }
+    glEnd();
+}
 ```
 
 ## Math

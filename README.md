@@ -146,6 +146,39 @@ static void drawAnObject ()
 }
 ```
 
+### Applying Transformation Matrices
+
+There are two different approaches I have managed to apply transformations in order to modify how objects are displayed:
+
+* Multiply a 4x4 matrix (GLKMatrix4) by a column vector (GLKVector3) to obtain the transformed point.
+* Multiplying a 4x4 matrix (GLKMatrix4) to the current glMatrixMode(GL_MODELVIEW) after loading the identity matrix.
+
+#### Multiply GLKMatrix4 by a GLKVector3
+
+```objc
+// Define a sample vector to draw a point
+GLKVector3 point = GLKVector3Make(0.0f, 0.0f, 0.5f);
+// Create a transformation matrix (a translation, for instance)
+GLKMatrix4 translate = GLKMatrix4MakeTranslate(1.0f, 0.5f, 0.0f);
+// Multiply the transformation matrix by the column vector
+GLKVector3 point_t = GLKMatrix4MultiplyAndProjectVector3(translate, point);
+// Now our point_t has been translated by (1.0f, 0.5f, 0.0f)
+// It's coordinates should now be (1.0f, 0.5f, 0.5f);
+```
+
+#### Multiply the Model View Matrix by a GLKMatrix4
+
+```objc
+// Create a transformation matrix (a translation, for instance)
+GLKMatrix4 translate = GLKMatrix4MakeTranslate(1.0f, 0.5f, 0.0f);
+// Set the matrix mode to model view
+glMatrixMode(GL_MODELVIEW);
+// Load the identity matrix
+glLoadIdentity();
+// Multiply the current matrix by our transformation
+glMultMatrixf(translate.m);
+```
+
 ## Math
 
 ### References

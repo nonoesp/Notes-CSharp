@@ -1,4 +1,5 @@
 # Notes-CSharp
+
 Notes of C#.
 
 ## Table of Contents
@@ -177,6 +178,23 @@ glMatrixMode(GL_MODELVIEW);
 glLoadIdentity();
 // Multiply the current matrix by our transformation
 glMultMatrixf(translate.m);
+```
+
+#### Set An Isometric View
+
+The following code works, but for some reason the Z axis seems to be scaled down. If you discover why, please let me know =)!
+
+```objc
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+glOrtho(0.0, 0.0, self.bounds.size.width, self.bounds.size.height, -100.0, 100.0);
+
+glMatrixMode(GL_MODELVIEW);
+glLoadIdentity();
+glRotatef(-45.0, 1.0, 0.0, 0.0); // Rotate around Z
+glRotatef(-45.0, 0.0, 0.0, 1.0); // Rotate around Y
+
+// Draw here
 ```
 
 ## Math

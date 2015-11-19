@@ -64,6 +64,9 @@ Using the OpenTK library with C# to draw.
 
 * [Picking and Using Selection](https://www.opengl.org/archives/resources/faq/technical/selection.htm)
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
+* [OpenTK Examples](https://github.com/andykorth/opentk/tree/master/Source/Examples/OpenGL/1.x)
+* [OpenTK Examples: Picking](https://github.com/andykorth/opentk/blob/master/Source/Examples/OpenGL/1.x/Picking.cs)
+* [OpentK Examples: Stencil Buffer](https://github.com/andykorth/opentk/blob/master/Source/Examples/OpenGL/1.x/StencilCSG.cs)
 
 ### Change The Scale of The Graphics
 

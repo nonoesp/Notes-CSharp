@@ -210,3 +210,4 @@ glRotatef(-45.0, 0.0, 0.0, 1.0); // Rotate around Y
 ## References
 
 * [Grasshopper Assembly Extension](https://visualstudiogallery.msdn.microsoft.com/9e389515-0719-47b4-a466-04436b491cd6)
+* [C\# Coding Conventions](https://msdn.microsoft.com/en-us/library/ff926074.aspx)

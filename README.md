@@ -30,6 +30,10 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 
 ## Visual Studio
 
+### Shortcuts
+
+* Show Inmediate Window `CTRL + ALT + I`
+
 ### Get The Mouse Position
 
 Depending on the context, we may be willing to get coordinates of the cursor relative to a given window, a control, or relative to the whole screen.

@@ -28,6 +28,17 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 // Should print: The rating of 2001: A Space Odyssey (1968) is 7.7.
 ```
 
+### Remove Items From A List With A Loop
+
+Create a for loop in reverse order.
+
+```c#
+for(int i = n.LinkedBeams.Count-1; i >= 0; i--)
+{
+    this.RemoveBeam(n.LinkedBeams[i]);
+}
+```
+
 ## Visual Studio
 
 ### Shortcuts

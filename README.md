@@ -114,6 +114,24 @@ GL.Begin(PrimitiveType.Polygon);
 GL.End();
 ```
 
+### From 3D coordinates (World) to 2D (Screen)
+
+```c#
+Vector4d MyPoint3D = new Vector4d(0.0, 0.0, 0.0, 1.0);
+Vector4d MyPoint2D = Vector4d.Transform(MyPoint3D, c); // c is the projection matrix applied to your scene
+Matrix4d pinv = c.Inverted(); // Obtain inverse of the projection matrix
+
+GL.PushMatrix();
+GL.MultMatrix(ref pinv); // Reverse the projection matrix to screen coordinates
+GL.PointSize(20.0f);
+GL.Begin(PrimitiveType.Points);
+{
+    GL.Vertex2(MyPoint2D.X, MyPoint2D.Y);
+}
+GL.End();
+GL.PopMatrix();
+```
+
 ## References
 
 * [Grasshopper Assembly Extension](https://visualstudiogallery.msdn.microsoft.com/9e389515-0719-47b4-a466-04436b491cd6)

@@ -34,8 +34,9 @@ This example assumes there is a list named `PeopleList` which contains objects w
 
 ```c#
 // Sort ASC by object age
-PeopleList.Sort((s1, s2) => s2.age.CompareTo(s1.age));
+PeopleList.Sort((s1, s2) => s1.age.CompareTo(s2.age));
 // Sort DESC by object age
+PeopleList.Sort((s1, s2) => s2.age.CompareTo(s1.age));
 ```
 
 ### Print A Formatted String

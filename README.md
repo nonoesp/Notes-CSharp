@@ -17,6 +17,15 @@ int[] numbers = new int[8];
 numbers.GetLenth(0); // Returns 8
 ```
 
+### List.IndexOf()
+
+```c#
+foreach(String s in ListOfStrings)
+{
+  double i = ListOfStrings.IndexOf(s); // returns the index of the element in the list
+}
+```
+
 ### Print A Formatted String
 
 ```c#

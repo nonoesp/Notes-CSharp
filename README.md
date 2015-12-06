@@ -26,6 +26,18 @@ foreach(String s in ListOfStrings)
 }
 ```
 
+### List.Sort()
+
+Sort the contents of a List using a given parameter of objects contained in the list.
+
+This example assumes there is a list named `PeopleList` which contains objects with an `age` property.
+
+```c#
+// Sort ASC by object age
+PeopleList.Sort((s1, s2) => s2.age.CompareTo(s1.age));
+// Sort DESC by object age
+```
+
 ### Print A Formatted String
 
 ```c#

@@ -15,7 +15,7 @@ Notes of C#.
 ```c#
 Random r = new Random();
 int myInteger = r.Next();
-int myDouble = r.NextDouble(); // number from 0.00 to 1.00
+double myDouble = r.NextDouble(); // number from 0.00 to 1.00
 ```
 
 ### Even or Odd

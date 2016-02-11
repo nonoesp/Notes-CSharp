@@ -10,6 +10,12 @@ Notes of C#.
 
 ## Syntax
 
+### Even or Odd
+
+```c#
+if(num % 2 == 0) { /*Is Even*/  }
+```
+
 ### Get The Length of An Array
 
 ```c#

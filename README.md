@@ -64,6 +64,18 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 // Should print: The rating of 2001: A Space Odyssey (1968) is 7.7.
 ```
 
+### Using StringBuilder to Concat Numerous Strings
+
+> For routines that perform extensive string manipulation (such as apps that modify a string numerous times in a loop), modifying a string repeatedly can exact a significant performance penalty. The alternative is to use StringBuilder, which is a mutable string class. Mutability means that once an instance of the class has been created, it can be modified by appending, removing, replacing, or inserting characters. A StringBuilder object maintains a buffer to accommodate expansions to the string. New data is appended to the buffer if room is available; otherwise, a new, larger buffer is allocated, data from the original buffer is copied to the new buffer, and the new data is then appended to the new buffer. (https://msdn.microsoft.com/en-us/library/system.text.stringbuilder(v=vs.110).aspx)
+
+```csharp
+System.Text.StringBuilder sb = new System.Text.StringBuilder();
+// No need to add System.Text if you add using System.Text; on top of your file
+sb.Append("This is a sentence.");
+sb.Append("\nThis is another sentence.");
+Console.Write(sb.ToString());
+```
+
 ### Remove Items From A List With A Loop
 
 Create a for loop in reverse order.

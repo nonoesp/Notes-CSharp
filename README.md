@@ -31,6 +31,10 @@ int[] numbers = new int[8];
 numbers.GetLenth(0); // Returns 8
 ```
 
+### A List of Lists
+
+List<List<Plane>> ListOfPlanes = new List<List<Plane>>();
+
 ### List.IndexOf()
 
 ```c#

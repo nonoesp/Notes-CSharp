@@ -59,6 +59,18 @@ PeopleList.Sort((s1, s2) => s1.age.CompareTo(s2.age));
 PeopleList.Sort((s1, s2) => s2.age.CompareTo(s1.age));
 ```
 
+### Set a variable to the My Documents path.
+
+```c#
+string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+```
+
+### Create a string array with the lines of text
+
+```c#
+string[] lines = { "First line", "Second line", "Third line" };
+```
+
 ### Print A Formatted String
 
 ```c#

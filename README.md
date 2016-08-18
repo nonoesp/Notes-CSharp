@@ -24,6 +24,13 @@ double myDouble = r.NextDouble(); // number from 0.00 to 1.00
 if(num % 2 == 0) { /*Is Even*/  }
 ```
 
+### Add Leading Zeros to a Number
+
+```c#
+int MyNumber = 256;
+string MyNumberWithZeros = MyNumber.ToString("000000"); // returns 000256
+```
+
 ### Get The Length of An Array
 
 ```c#

@@ -46,16 +46,16 @@ List<List<Plane>> ListOfPlanes = new List<List<Plane>>();
 
 ### Write A String of Text to A FilePath
 
-```
+```csharp
 using System.IO; // this should be at the beginning of your file
 // ...
  public static void WriteStringToFilePath(string FilePath, string Text)
-        {
-            using (StreamWriter outputFile = new StreamWriter(FilePath))
-            {
-                outputFile.Write(Text);
-            }
-        }
+{
+  using (StreamWriter outputFile = new StreamWriter(FilePath))
+  {
+    outputFile.Write(Text);
+  }
+}
 ```
 
 ### List.IndexOf()

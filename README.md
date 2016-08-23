@@ -44,6 +44,20 @@ numbers.GetLenth(0); // Returns 8
 List<List<Plane>> ListOfPlanes = new List<List<Plane>>();
 ```
 
+### Write A String of Text to A FilePath
+
+```
+using System.IO; // this should be at the beginning of your file
+// ...
+ public static void WriteStringToFilePath(string FilePath, string Text)
+        {
+            using (StreamWriter outputFile = new StreamWriter(FilePath))
+            {
+                outputFile.Write(Text);
+            }
+        }
+```
+
 ### List.IndexOf()
 
 ```c#

@@ -49,7 +49,7 @@ List<List<Plane>> ListOfPlanes = new List<List<Plane>>();
 ```csharp
 using System.IO; // this should be at the beginning of your file
 // ...
- public static void WriteStringToFilePath(string FilePath, string Text)
+public static void WriteStringToFilePath(string FilePath, string Text)
 {
   using (StreamWriter outputFile = new StreamWriter(FilePath))
   {

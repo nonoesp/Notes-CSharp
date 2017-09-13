@@ -190,7 +190,7 @@ Point ScreenPoint = myControl.PointToScreen(ClientPoint);
 
 Using the OpenTK library with C# to draw.
 
-### References
+### References
 
 * [Picking and Using Selection](https://www.opengl.org/archives/resources/faq/technical/selection.htm)
 * [Build A Windows.Forms+GLControl Based App](http://www.opentk.com/doc/chapter/2/glcontrol)
@@ -258,4 +258,7 @@ Notes-OSX is licensed under the MIT license. (http://opensource.org/licenses/MIT
 
 ## Me
 
-I tweet at [@nonoesp](http://www.twitter.com/nonoesp) and write at [nono.ma/says](http://nono.ma/says). I would love to hear about it if you find these notes are useful. Thanks!
+## Me
+
+I'm [Nono Martínez Alonso](http://nono.ma) ([nono.ma](http://nono.ma)), a computational designer with a penchant for design, code, and simplicity.  
+I tweet at [@nonoesp](http://www.twitter.com/nonoesp) and write at [Getting Simple](http://gettingsimple.com/). If you find this notes useful, I would love to hear about it. Thanks!

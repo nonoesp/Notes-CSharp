@@ -18,6 +18,12 @@ int myInteger = r.Next();
 double myDouble = r.NextDouble(); // number from 0.00 to 1.00
 ```
 
+### Formatted Date String
+
+```c#
+DateTime.Now.ToString("yyyyMMddHHmmss")
+```
+
 ### Even or Odd
 
 ```c#

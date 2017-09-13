@@ -258,7 +258,5 @@ Notes-OSX is licensed under the MIT license. (http://opensource.org/licenses/MIT
 
 ## Me
 
-## Me
-
 I'm [Nono Martínez Alonso](http://nono.ma) ([nono.ma](http://nono.ma)), a computational designer with a penchant for design, code, and simplicity.  
 I tweet at [@nonoesp](http://www.twitter.com/nonoesp) and write at [Getting Simple](http://gettingsimple.com/). If you find this notes useful, I would love to hear about it. Thanks!

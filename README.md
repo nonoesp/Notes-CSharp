@@ -46,7 +46,7 @@ numbers.GetLenth(0); // Returns 8
 
 ### Get the Assembly Version
 
-```
+```c#
 Version versionInfo = Assembly.GetExecutingAssembly().GetName().Version;
 String versionString = String.Format("{0}.{1}.{2}.{3}", versionInfo.Major.ToString(), versionInfo.Minor.ToString(), versionInfo.Build.ToString(), versionInfo.Revision.ToString());
 ```

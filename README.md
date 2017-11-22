@@ -93,6 +93,41 @@ PeopleList.Sort((s1, s2) => s1.age.CompareTo(s2.age));
 PeopleList.Sort((s1, s2) => s2.age.CompareTo(s1.age));
 ```
 
+### When Is A String Null?
+
+```c#
+var name = "Nono";
+// A
+if(name == null)
+{
+    Console.WriteLine("A. String is null");
+} else
+{
+    Console.WriteLine("A. String not null"); // is not null
+}
+name = "";
+// B
+if (name == null)
+{
+    Console.WriteLine("B. String is null");
+}
+else
+{
+    Console.WriteLine("B. String not null"); // is not null
+}
+name = null;
+// C
+if (name == null)
+{
+    Console.WriteLine("C. String is null"); // is null
+}
+else
+{
+    Console.WriteLine("C. String not null");
+}
+Console.ReadLine();
+```
+
 ### Set a variable to the My Documents path.
 
 ```c#

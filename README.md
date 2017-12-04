@@ -93,6 +93,13 @@ PeopleList.Sort((s1, s2) => s1.age.CompareTo(s2.age));
 PeopleList.Sort((s1, s2) => s2.age.CompareTo(s1.age));
 ```
 
+### Show a MessageBox
+
+```c#
+using System.Windows;
+MessageBox.Show("Hello, Box!");
+```
+
 ### When Is A String Null?
 
 ```c#

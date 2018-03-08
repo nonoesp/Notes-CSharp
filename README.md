@@ -158,6 +158,13 @@ Print("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
 // Should print: The rating of 2001: A Space Odyssey (1968) is 7.7.
 ```
 
+You can also format a string by itself—no need to print.
+
+```
+string movie = String.Format("The rating of {0} ({1}) is {2}.", Title, Year, Rating);
+// The rating of 2001: A Space Odyssey (1968) is 7.7.
+```
+
 ### Round Double to Certain Decimals
 
 ```c#
